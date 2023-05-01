@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Headlines</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>CNN</h1>
+        <ol>
+            {% for data in cnn_headline %}
+            <li><b>{{data}}</b></li>
+            {% endfor %}
+        </ol>
+    </div>
+
+</body>
+
+</html>
